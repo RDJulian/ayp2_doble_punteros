@@ -9,6 +9,8 @@ struct Contacto {
     std::string apellido;
 };
 
+//pre: Numero deberia tener 8 digitos.
+//post: Devuelve el puntero a contacto generado.
 Contacto* generarContacto(unsigned int numero, const std::string& nombre, const std::string& apellido);
 
 #endif

@@ -1,7 +1,7 @@
 #ifndef HELADERA_H
 #define HELADERA_H
 
-#include "constantes.h"
+#include "libs/constantes.h"
 #include "contacto.h"
 
 struct Agenda {
@@ -11,11 +11,7 @@ struct Agenda {
 };
 
 //pre: -
-//post: Devuelve true si el vector esta lleno. Devuelve false de lo contrario.
-bool lleno(Agenda* agenda);
-
-//pre: -
-//post: Agrega la fruta a la heladera.
+//post: Agrega el contacto a la agenda.
 void agregarContacto(Agenda* agenda, Contacto* contacto);
 
 //pre: -

@@ -1,13 +1,13 @@
 #include "agenda.h"
-#include "parser.h"
-#include "excepciones.h"
+#include "libs/parser.h"
+#include "libs/excepciones.h"
 #include <iostream>
 #include <fstream>
 
 using namespace std;
 
 int main() {
-    Agenda* agenda = new Agenda;
+    Agenda* agenda = nullptr; //VER SI ESTA LINEA ES CORRECTA//
     try {
         procesarArchivo(agenda, RUTA_ARCHIVO);
     } catch (ArchivoNoExistenteException& e) {

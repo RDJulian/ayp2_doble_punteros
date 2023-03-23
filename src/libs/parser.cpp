@@ -1,7 +1,6 @@
 #include "parser.h"
 #include "excepciones.h"
 #include "validaciones.h"
-#include "contacto.h"
 #include <fstream>
 #include <vector>
 
@@ -13,8 +12,8 @@ using namespace std;
 //post: Devuelve la informacion de la linea, separada en base al DELIMITADOR.
 vector<string> procesarLinea(const std::string& linea);
 
-//pre: La informacion debe tener solamente dos elementos y la cantidad debe ser entera.
-//post: Devuelve una fruta con la informacion ingresada.
+//pre: La informacion debe ser valida.
+//post: Devuelve un contacto con la informacion ingresada.
 Contacto* generarContacto(vector<string> informacion);
 
 // ACLARACION SUPER IMPORTANTE: NO PUEDEN USAR VECTOR PARA EL PRIMER TP.
@@ -56,10 +55,11 @@ void procesarArchivo(Agenda* agenda, const string& ruta_archivo) {
             vector<string> informacion = procesarLinea(linea);
             try {
                 Contacto* contacto = generarContacto(informacion);
-                // NOTA: Al programar esta funcion, inmediatamente se deberia ver los contactos en pantalla.
                 agregarContacto(agenda, contacto);
             } catch (ContactoNoValidoException& e) {
                 // Ignora, pero puede mandar la linea problematica a otro archivo, por ejemplo.
+            } catch (ContactoRepetidoException& e) {
+                // Idem a arriba.
             }
         }
     }
