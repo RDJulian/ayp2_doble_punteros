@@ -26,9 +26,9 @@ Ejemplos de como utilizar doble punteros en C++. Clase de AyP2 1c2023 (23/3).
     </li>
     </ol>
 
-   NOTA: En el repositorio hay una "plantilla" para completar durante la clase. Solamente es necesario completar algunas
-   funciones. Los archivos en **/src/libs** ya están completos. Sin embargo, se recomienda resolver TODO el ejercicio de
-   cero.<br>
+   NOTA: En el repositorio hay una "plantilla" para completar durante la clase. Solamente es necesario implementar
+   algunas funciones. Los archivos en **src/libs** ya están completos. Sin embargo, se recomienda resolver TODO el
+   ejercicio de cero.<br>
 
 2. Escribir un simple programa que dados dos valores FILA y COLUMNA, **ingresados en tiempo de ejecución**, genere una
    matriz de tamaño FILA x COLUMNA, inicializada como matriz nula en memoria dinámica. Manejar la estructura con un
