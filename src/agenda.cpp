@@ -10,7 +10,7 @@ void agregarContacto(Agenda* agenda, Contacto* contacto) {
 
 }
 
-void liberar_memoria(Agenda& agenda) {
+void liberarMemoria(Agenda& agenda) {
     if (agenda.contactos != nullptr) {
 
         //COMPLETAR//

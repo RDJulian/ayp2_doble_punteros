@@ -16,6 +16,6 @@ void agregarContacto(Agenda* agenda, Contacto* contacto);
 
 //pre: -
 //post: Libera la memoria reservada por el vector.
-void liberar_memoria(Agenda* agenda);
+void liberarMemoria(Agenda* agenda);
 
 #endif
