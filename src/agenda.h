@@ -11,6 +11,10 @@ struct Agenda {
 };
 
 //pre: -
+//post: Devuelve true si hay un contacto en la agenda con el numero ingresado, false de lo contrario.
+bool contactoExistente(Agenda* agenda, unsigned int numero);
+
+//pre: -
 //post: Agrega el contacto a la agenda.
 void agregarContacto(Agenda* agenda, Contacto* contacto);
 

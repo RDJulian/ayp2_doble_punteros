@@ -12,7 +12,10 @@ bool esEntero(const string& numero) {
     }
 }
 
+bool esNumeroValido(const string& entrada) {
+    return (esEntero(entrada) && entrada.length() == DIGITOS_NUMERO);
+}
+
 bool esInformacionValida(vector<string> informacion) {
-    return (informacion.size() == CAMPOS && esEntero(informacion[NUMERO]) &&
-            informacion[NUMERO].length() == DIGITOS_NUMERO);
+    return (informacion.size() == CAMPOS && esNumeroValido(informacion[NUMERO]));
 }

@@ -9,7 +9,11 @@
 bool esEntero(const std::string& numero);
 
 //pre: -
-//post: Devuelve true si la informacion es correcta (tres elementos, el numero es entero y tiene 8 digitos).
+//post: Devuelve true si la entrada correspode a un entero de 8 digitos, false de lo contrario.
+bool esNumeroValido(const std::string& entrada);
+
+//pre: -
+//post: Devuelve true si la informacion es correcta (tres elementos, el numero es valido).
 bool esInformacionValida(std::vector<std::string> informacion);
 
 #endif
