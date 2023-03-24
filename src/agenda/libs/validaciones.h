@@ -14,6 +14,6 @@ bool esNumeroValido(const std::string& entrada);
 
 //pre: -
 //post: Devuelve true si la informacion es correcta (tres elementos, el numero es valido).
-bool esInformacionValida(std::vector<std::string> informacion);
+bool esInformacionValida(const std::vector<std::string>& informacion);
 
 #endif

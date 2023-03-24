@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Contacto* generarContacto(unsigned int numero, const string& nombre, const string& apellido) {
+Contacto* generarContacto(const size_t& numero, const string& nombre, const string& apellido) {
     Contacto* contacto = new Contacto;
     contacto->numero = numero;
     contacto->nombre = nombre;

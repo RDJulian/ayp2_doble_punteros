@@ -16,6 +16,6 @@ bool esNumeroValido(const string& entrada) {
     return (esEntero(entrada) && entrada.length() == DIGITOS_NUMERO);
 }
 
-bool esInformacionValida(vector<string> informacion) {
+bool esInformacionValida(const vector<string>& informacion) {
     return (informacion.size() == CAMPOS && esNumeroValido(informacion[NUMERO]));
 }

@@ -7,12 +7,12 @@
 struct Agenda {
     Contacto** contactos = nullptr;
     size_t tamanio = 0;
-    int cantidad_contactos = 0;
+    size_t cantidad_contactos = 0;
 };
 
 //pre: -
 //post: Devuelve true si hay un contacto en la agenda con el numero ingresado, false de lo contrario.
-bool contactoExistente(Agenda* agenda, unsigned int numero);
+bool contactoExistente(Agenda* agenda, const size_t& numero);
 
 //pre: -
 //post: Agrega el contacto a la agenda.

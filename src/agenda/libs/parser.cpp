@@ -14,7 +14,7 @@ vector<string> procesarLinea(const std::string& linea);
 
 //pre: La informacion debe ser valida.
 //post: Devuelve un contacto con la informacion ingresada.
-Contacto* generarContacto(vector<string> informacion);
+Contacto* generarContacto(const vector<string>& informacion);
 
 // ACLARACION SUPER IMPORTANTE: NO PUEDEN USAR VECTOR PARA EL PRIMER TP.
 vector<string> procesarLinea(const string& linea) {
@@ -34,7 +34,7 @@ vector<string> procesarLinea(const string& linea) {
     return informacion;
 }
 
-Contacto* generarContacto(vector<string> informacion) {
+Contacto* generarContacto(const vector<string>& informacion) {
     if (!esInformacionValida(informacion)) {
         throw ContactoNoValidoException();
     } else {

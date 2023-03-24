@@ -4,13 +4,13 @@
 #include <string>
 
 struct Contacto {
-    unsigned int numero;
+    size_t numero;
     std::string nombre;
     std::string apellido;
 };
 
 //pre: Numero deberia tener 8 digitos.
 //post: Devuelve el puntero a contacto generado.
-Contacto* generarContacto(unsigned int numero, const std::string& nombre, const std::string& apellido);
+Contacto* generarContacto(const size_t& numero, const std::string& nombre, const std::string& apellido);
 
 #endif
