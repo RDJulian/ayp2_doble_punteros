@@ -1,6 +1,6 @@
 #include "agenda.h"
-#include "libs/excepciones.h"
-#include "libs/validaciones.h"
+#include "excepciones.h"
+#include "validaciones.h"
 #include <iostream>
 #include "opciones.h"
 

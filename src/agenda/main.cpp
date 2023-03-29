@@ -1,7 +1,7 @@
 #include "agenda.h"
-#include "libs/parser.h"
-#include "libs/excepciones.h"
-#include "libs/validaciones.h"
+#include "parser.h"
+#include "excepciones.h"
+#include "validaciones.h"
 #include "menu.h"
 #include <iostream>
 #include <fstream>

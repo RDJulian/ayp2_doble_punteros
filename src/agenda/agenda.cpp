@@ -1,6 +1,6 @@
 #include "agenda.h"
-#include "libs/vectorAgenda.h"
-#include "libs/excepciones.h"
+#include "vectorAgenda.h"
+#include "excepciones.h"
 
 using namespace std;
 

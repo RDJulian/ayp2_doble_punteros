@@ -1,7 +1,7 @@
 #ifndef HELADERA_H
 #define HELADERA_H
 
-#include "libs/constantes.h"
+#include "constantes.h"
 #include "contacto.h"
 
 struct Agenda {
