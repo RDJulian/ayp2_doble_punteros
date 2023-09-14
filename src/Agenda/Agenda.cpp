@@ -73,5 +73,5 @@ Agenda::~Agenda() {
     for (size_t i = 0; i < cantActual; i++) {
         delete contactos[i];
     }
-    delete contactos;
+    delete[] contactos;
 }
