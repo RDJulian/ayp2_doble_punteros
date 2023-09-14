@@ -35,19 +35,3 @@ Contacto* Lector::generarContacto(vector<string> linea) {
         return nullptr;
     }
 }
-
-void Lector::procesarArchivo(Agenda* agenda, string rutaArchivo) {
-    string linea;
-    ifstream archivo(rutaArchivo);
-    if (!archivo.is_open()) {
-        return;
-    } else {
-        while (getline(archivo, linea)) {
-            Contacto* contacto = generarContacto(split(linea, ','));
-            if (contacto) {
-                agenda->agregarContacto(contacto);
-            }
-        }
-        archivo.close();
-    }
-}

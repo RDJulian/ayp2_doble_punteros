@@ -23,7 +23,6 @@ private:
     static Contacto* generarContacto(std::vector<std::string> linea);
 
 public:
-    static void procesarArchivo(Agenda* agenda, std::string ruta_archivo);
 };
 
 
