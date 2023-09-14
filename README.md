@@ -9,8 +9,11 @@ Ejemplos de como utilizar doble punteros en C++. Clase de AyP2 2c2023 (14/9).
    > NUMERO,NOMBRE,APELLIDO
 
    Para que un Contacto sea válido, NUMERO debe ser un entero de 8 dígitos. Sin embargo, un Contacto válido no puede ser
-   agregado a la agenda si ya existe otro contacto con el mismo número.<br>
-   Escribir un programa que procese este archivo, cargue contactos a la agenda, y además permita mediante un menú:
+   agregado a la Agenda si ya existe otro contacto con el mismo número.<br>
+   La Agenda tendra un tamaño fijo, pero que no sera definido hasta la ejecución del programa: el usuario de la clase
+   pasará este tamaño cuando se instancie la Agenda.<br>
+   Escribir un programa que instancie la Agenda, procese este archivo, cargue contactos a la agenda, y además permita
+   mediante un menú:
     <ol>
     <li> Dar de alta un Contacto, con las consideraciones anteriores.</li>
     <li> Mostrar por pantalla todos los contactos, mostrando:
